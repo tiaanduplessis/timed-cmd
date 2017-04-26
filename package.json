@@ -1,0 +1,49 @@
+{
+  "name": "timed-cmd",
+  "version": "1.0.0",
+  "description": "See how long a command takes to execute",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiaanduplessis/timed-command.git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/timed-command",
+  "bugs": {
+    "url": "https://github.com/tiaanduplessis/timed-command/issues",
+    "email": "tiaanduplessis@hotmail.com"
+  },
+  "author": {
+    "name": "Tiaan",
+    "email": "tiaanduplessis@hotmail.com",
+    "url": "tiaan.beer"
+  },
+  "bin": {
+    "timed-cmd": "cli.js"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "pretest": "npm run lint:fix",
+    "test": "jest --env=node",
+    "test:watch": "npm test -- --watch",
+    "coverage": "npm test -- --coverage",
+    "lint": "standard --verbose",
+    "lint:fix": "standard --fix --verbose",
+    "precommit": "npm test"
+  },
+  "keywords": [
+    "cli",
+    "timer",
+    "execute",
+    "timed-command"
+  ],
+  "dependencies": {
+    "execa": "^0.6.3",
+    "pretty-hrtime": "^1.0.3"
+  },
+  "devDependencies": {
+    "husky": "^0.13.3",
+    "jest": "^19.0.2",
+    "standard": "^10.0.1"
+  }
+}
