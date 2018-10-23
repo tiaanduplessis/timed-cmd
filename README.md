@@ -63,6 +63,8 @@
 
 ## Install
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/timed-cmd.svg)](https://greenkeeper.io/)
+
 ```sh
 $ npm install --global timed-cmd
 # OR
