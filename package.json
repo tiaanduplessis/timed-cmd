@@ -38,7 +38,7 @@
     "timed-command"
   ],
   "dependencies": {
-    "execa": "^0.8.0",
+    "execa": "^4.0.1",
     "pretty-hrtime": "^1.0.3"
   },
   "devDependencies": {
