@@ -80,6 +80,15 @@ $ timed-cmd npm i
 #⌛ Time: 17.408053188 s
 ```
 
+Failed commands write their diagnostic to stderr and preserve the command's
+nonzero exit status when it is an integer from `1` to `255`. Other failures,
+including shell spawn errors, use status `1`.
+
+When used as a library, `timed(command)` keeps its existing logging behavior and
+does not change the calling process's exit status. An optional second argument,
+`timed(command, onError)`, handles failures instead of the default logger. Both
+forms return `undefined`.
+
 ## Contribute
 
 Contributions are welcome. Please open up an issue or create PR if you would like to help out.
